@@ -1,0 +1,25 @@
+# Environment
+.env
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+backend/venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# FAISS / temp
+*.faiss
+*.pkl
+temp/
