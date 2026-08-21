@@ -383,33 +383,6 @@ Accepts a natural-language question and generates an answer using retrieved docu
 
 ---
 
-# 📸 Screenshots
-
-Add real screenshots of the application here.
-
-Recommended screenshots:
-
-### 📄 PDF Upload
-
-```text
-docs/
-└── upload-screen.png
-```
-
-```markdown
-![PDF Upload](docs/upload-screen.png)
-```
-
-### 💬 Chat Interface
-
-```text
-docs/
-└── chat-screen.png
-```
-
-```markdown
-![Chat Interface](docs/chat-screen.png)
-```
 
 ### 🤖 AI Response
 
