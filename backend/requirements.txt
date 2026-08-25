@@ -3,10 +3,7 @@ uvicorn
 python-multipart
 langchain
 langchain-community
-langchain-huggingface
 langchain-groq
 langchain-text-splitters
-faiss-cpu
 pypdf
 python-dotenv
-sentence-transformers
