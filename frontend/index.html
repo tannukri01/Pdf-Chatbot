@@ -116,7 +116,7 @@
                 return;
             }
 
-            status.innerHTML = '<span class="text-indigo-600">Processing... Please wait</span>';
+            status.innerHTML = '<span class="text-indigo-600">Processing... Please wait (first time may take 30-50 sec)</span>';
 
             const formData = new FormData();
             for (let file of fileInput.files) {
@@ -124,7 +124,7 @@
             }
 
             try {
-                const res = await fetch("http://localhost:8000/upload", {
+                const res = await fetch("https://pdf-chatbot-1-1ftx.onrender.com/upload", {
                     method: "POST",
                     body: formData
                 });
@@ -163,7 +163,6 @@
                 chatBox.innerHTML = '';
             }
 
-            // User message
             chatBox.innerHTML += `
                 <div class="flex justify-end">
                     <div class="chat-bubble-user text-white rounded-2xl rounded-br-md px-4 py-2.5 max-w-[75%] text-sm shadow-md">
@@ -174,7 +173,6 @@
             questionInput.value = "";
             chatBox.scrollTop = chatBox.scrollHeight;
 
-            // Loading
             const loadingId = 'loading-' + Date.now();
             chatBox.innerHTML += `
                 <div class="flex justify-start" id="${loadingId}">
@@ -189,7 +187,7 @@
             formData.append("question", question);
 
             try {
-                const res = await fetch("http://localhost:8000/ask", {
+                const res = await fetch("https://pdf-chatbot-1-1ftx.onrender.com/ask", {
                     method: "POST",
                     body: formData
                 });
