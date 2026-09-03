@@ -68,7 +68,7 @@ async def ask_question(question: str = Form(...)):
         return {"answer": "Please upload at least one PDF first."}
 
     try:
-        llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
+        llm = ChatGroq(model="openai/gpt-oss-20b", temperature=0)
 
         # Keep context reasonable size
         context = documents_text[:12000]
